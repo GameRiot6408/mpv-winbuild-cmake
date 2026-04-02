@@ -78,7 +78,6 @@ ExternalProject_Add(ffmpeg
         --enable-libspeex
         --enable-libvorbis
         --enable-libbs2b
-        --enable-librubberband
         --enable-libvpx
         --enable-libwebp
         --enable-libaom
