@@ -37,17 +37,17 @@ ExternalProject_Add(mpv
         -Dgpl=false
         -Db_ndebug=true
         -Doptimization=3
-        -Db_lto=true
+        -Db_lto=false
         ${mpv_lto_mode}
         -Dlibmpv=true
         -Dpdf-build=enabled
         -Dlua=enabled
         -Djavascript=enabled
         -Dsdl2-gamepad=enabled
-        -Dlibarchive=enabled
+        -Dlibarchive=disabled
         -Dlibbluray=disabled
         -Ddvdnav=disabled
-        -Duchardet=enabled
+        -Duchardet=disabled
         -Dlcms2=enabled
         -Dopenal=enabled
         -Dspirv-cross=enabled
