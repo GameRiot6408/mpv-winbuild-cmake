@@ -26,9 +26,6 @@ ExternalProject_Add(ffmpeg
         opus
         speex
         vorbis
-        x264
-        ${ffmpeg_x265}
-        xvidcore
         libxml2
         libvpl
         libopenmpt
@@ -41,9 +38,6 @@ ExternalProject_Add(ffmpeg
         svtav1
         dav1d
         vapoursynth
-        ${ffmpeg_uavs3d}
-        ${ffmpeg_davs2}
-        rubberband
         libva
         openal-soft
     GIT_REPOSITORY https://github.com/FFmpeg/FFmpeg.git
@@ -59,7 +53,6 @@ ExternalProject_Add(ffmpeg
         --pkg-config-flags=--static
         --enable-cross-compile
         --enable-runtime-cpudetect
-        --enable-avisynth
         --enable-vapoursynth
         --enable-libass
         --enable-libbluray
@@ -77,14 +70,11 @@ ExternalProject_Add(ffmpeg
         --enable-libsoxr
         --enable-libspeex
         --enable-libvorbis
-        --enable-libbs2b
         --enable-libvpx
         --enable-libwebp
         --enable-libaom
         --enable-libsvtav1
         --enable-libdav1d
-        ${ffmpeg_davs2_cmd}
-        ${ffmpeg_uavs3d_cmd}
         --enable-libzimg
         --enable-openssl
         --enable-libxml2
@@ -95,7 +85,6 @@ ExternalProject_Add(ffmpeg
         --enable-libjxl
         --enable-libplacebo
         --enable-libshaderc
-        --enable-libzvbi
         --enable-libaribcaption
         ${ffmpeg_cuda}
         --enable-amf
