@@ -45,8 +45,8 @@ ExternalProject_Add(mpv
         -Djavascript=enabled
         -Dsdl2-gamepad=enabled
         -Dlibarchive=enabled
-        -Dlibbluray=enabled
-        -Ddvdnav=enabled
+        -Dlibbluray=disabled
+        -Ddvdnav=disabled
         -Duchardet=enabled
         -Dlcms2=enabled
         -Dopenal=enabled
