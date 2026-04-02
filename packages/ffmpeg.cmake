@@ -59,8 +59,6 @@ ExternalProject_Add(ffmpeg
         --pkg-config-flags=--static
         --enable-cross-compile
         --enable-runtime-cpudetect
-        --enable-gpl
-        --enable-version3
         --enable-avisynth
         --enable-vapoursynth
         --enable-libass
@@ -83,14 +81,11 @@ ExternalProject_Add(ffmpeg
         --enable-librubberband
         --enable-libvpx
         --enable-libwebp
-        --enable-libx264
-        --enable-libx265
         --enable-libaom
         --enable-libsvtav1
         --enable-libdav1d
         ${ffmpeg_davs2_cmd}
         ${ffmpeg_uavs3d_cmd}
-        --enable-libxvid
         --enable-libzimg
         --enable-openssl
         --enable-libxml2
