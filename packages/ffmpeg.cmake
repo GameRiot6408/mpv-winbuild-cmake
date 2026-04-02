@@ -1,6 +1,8 @@
 ExternalProject_Add(ffmpeg
     DEPENDS
         amf-headers
+        spirv-headers
+        vulkan
         ${nvcodec_headers}
         bzip2
         lame
