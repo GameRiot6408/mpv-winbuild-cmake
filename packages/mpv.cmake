@@ -34,6 +34,7 @@ ExternalProject_Add(mpv
         --default-library=shared
         --prefer-static
         -Ddebug=true
+        -Dgpl=false
         -Db_ndebug=true
         -Doptimization=3
         -Db_lto=true
