@@ -1,7 +1,6 @@
 ExternalProject_Add(ffmpeg
     DEPENDS
         amf-headers
-        avisynth-headers
         ${nvcodec_headers}
         bzip2
         lame
@@ -16,7 +15,6 @@ ExternalProject_Add(ffmpeg
         libmodplug
         libpng
         libsoxr
-        libbs2b
         libvpx
         libwebp
         libzimg
@@ -32,7 +30,6 @@ ExternalProject_Add(ffmpeg
         libjxl
         shaderc
         libplacebo
-        libzvbi
         libaribcaption
         aom
         svtav1
